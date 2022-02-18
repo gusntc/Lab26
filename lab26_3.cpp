@@ -1,7 +1,15 @@
 #include<iostream>
+#include<set>
 
 using namespace std;
 
+int count(int a[],int b){
+	set<int> myset;
+	for(int i=0;i<b;i++){
+		myset.insert(a[i]);
+	}
+	return myset.size();
+}
 //Write function count() here.
 
 int main(){	
